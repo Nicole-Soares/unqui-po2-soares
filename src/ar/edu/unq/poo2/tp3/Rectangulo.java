@@ -32,7 +32,22 @@ public class Rectangulo {
 		public void setPuntoOrigen(Punto puntoOrigen) {
 			this.puntoOrigen = puntoOrigen;
 		}
+
+
+		public int area() {
+			return(this.getBase() * this.getAltura());
+		}
 		
+		public int perimetro() {
+			return(this.getBase() + this.getAltura());
+		}
 		
+		public boolean esHorizontal() {
+			return(this.getBase() > this.getAltura());
+		}
+		
+		public boolean esVertical() {
+			return(this.getBase() < this.getAltura());
+		}
 		
 }
