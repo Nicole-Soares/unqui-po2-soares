@@ -1,5 +1,7 @@
 package ar.edu.unq.poo2.tp3;
 
+
+
 public class Punto{
 	
 	private int x;
@@ -9,6 +11,12 @@ public class Punto{
 		super();
 		this.x = x;
 		this.y = y;
+	}
+	
+	public Punto() {
+		super();
+		this.x = 0;
+		this.y = 0;
 	}
 
 	public int getX() {
@@ -27,6 +35,12 @@ public class Punto{
 		this.y = y;
 	}
 	
-	
+	public Punto sumar(Punto punto) {
+		int nuevaX = this.getX() +  punto.getX();
+		int nuevaY = this.getY() + punto.getY();
+		Punto nuevoPunto = new Punto(nuevaX, nuevaY);
+		
+		return nuevoPunto;
+	}
 	
 }

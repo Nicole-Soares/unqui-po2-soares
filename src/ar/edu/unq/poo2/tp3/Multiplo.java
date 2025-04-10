@@ -22,7 +22,11 @@ public class Multiplo {
 
 
 	public boolean hayMultiploDeEnUnRangoDe(int numero1, int numero2, int rango1, int rango2) {
-		
+		String a = "abc";
+		System.out.println(a);
+		String s = a;
+		String t;
+		System.out.println("Quilmes".substring(2,4));
 		int rangoMinimo = rango1;
 		int rangoMayor = rango2;
 		boolean existeMultiplo = false;
