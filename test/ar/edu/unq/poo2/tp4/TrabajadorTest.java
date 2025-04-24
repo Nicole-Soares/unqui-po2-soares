@@ -41,4 +41,5 @@ public class TrabajadorTest {
 		felipe.agregarIngreso(ingresoExtra);
 		assertEquals(1.5d, felipe.getImpuestoAPagar());
 	}
+	
 }

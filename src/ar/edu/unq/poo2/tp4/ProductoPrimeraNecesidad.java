@@ -7,7 +7,7 @@ public class ProductoPrimeraNecesidad extends Producto {
 	
 	 //constructor
 	public ProductoPrimeraNecesidad(String nombre, double precio, boolean pertenece, double descuento) {
-		super(nombre, precio, pertenece);
+		super(nombre, precio, pertenece); //usar el constructor del padre, le paso los parametros en el mismo orden
 		this.descuento = descuento;
 	}
 

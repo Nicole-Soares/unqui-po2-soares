@@ -37,7 +37,7 @@ public class Trabajador {
 	public double getTotalPercibido(){
 		double total = 0d;
 		for(Ingreso ingreso:listaDeIngresos) {
-			total=+ ingreso.getMonto();
+			total+= ingreso.getMonto();
 		}
 		return total;
 	}
@@ -46,7 +46,7 @@ public class Trabajador {
 		double total = 0d;
 		for(Ingreso ingreso:listaDeIngresos) {
 			
-			total=+ ingreso.montoImponible();
+			total+= ingreso.montoImponible();
 		}
 		return total;
 	}
