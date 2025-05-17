@@ -6,7 +6,7 @@ import java.util.List;
 public abstract class Porcion {
 	
 	public abstract double gananciaAnualesDeSoja();
-
+	public abstract double ganaciaAnualDeTrigo();
 	
 
 }

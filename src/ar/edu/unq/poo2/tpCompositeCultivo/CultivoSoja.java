@@ -31,5 +31,8 @@ public class CultivoSoja extends Cultivo {
 		return this.getGanancia();
 	}
 	
-	
+	@Override
+	public double gananciaAnualDeTrigoParaPorcionPura() {
+		return 0;
+	}
 }

@@ -25,7 +25,10 @@ public class PorcionPura extends Porcion {
 		 return (this.getCultivo().gananciaAnualDeSojaParaPorcionPura());
 	}
 
-	
+	@Override
+	public double ganaciaAnualDeTrigo() {
+		return(this.getCultivo().gananciaAnualDeTrigoParaPorcionPura());
+	}
 	
 
 }

@@ -1,7 +1,6 @@
 package ar.edu.unq.poo2.tpCompositeCultivo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +8,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.poo2.tpStateMp3.Pause;
-import ar.edu.unq.poo2.tpStateMp3.Reproductor;
-import ar.edu.unq.poo2.tpStateMp3.Song;
+public class TrigoTest {
 
-public class SojaTest {
 
-	
 	//declaro
 	private Porcion pura;
 	private Porcion pura2;
@@ -48,16 +43,23 @@ public class SojaTest {
 	}
 	
 	@Test
-	public void testeandoLaSumaDeLaSojaEnUnaPorcionPura() {
+	public void testeandoLaSumaDelTrigoEnUnaPorcionPuraVacia() {
 		
 		
-		assertEquals(500, pura.gananciaAnualesDeSoja());
+		assertEquals(0, pura.ganaciaAnualDeTrigo());
 	}
 	
 	@Test
-	public void testeandoLaSumaDeLaSojaEnUnaPorcionMixta() {
+	public void testeandoLaSumaDelTrigoEnUnaPorcionPura() {
 		
 		
-		assertEquals(375, mixta.gananciaAnualesDeSoja());
+		assertEquals(300, pura2.ganaciaAnualDeTrigo());
+	}
+	
+	@Test
+	public void testeandoLaSumaDelTrigoEnUnaPorcionMixta() {
+		
+		
+		assertEquals(75, mixta.ganaciaAnualDeTrigo());
 	}
 }

@@ -20,7 +20,7 @@ public class PorcionMixta extends Porcion {
 
 
 
-	public void setListaDePorciones(List<Porcion> listaDePorciones) {
+	public void agregarUnCultivo(List<Porcion> listaDePorciones) {
 		this.listaDePorciones = listaDePorciones;
 	}
 
@@ -32,6 +32,16 @@ public class PorcionMixta extends Porcion {
 		double totalDelMonto = 0;
 		for(Porcion porcion: listaDePorciones) {
 			totalDelMonto+= (porcion.gananciaAnualesDeSoja()) /4 ; // lo dividimos por 4 porque son 4 sectores, me traigo el precio como si fuera puro y lo divido
+		}
+		
+		return totalDelMonto;
+	}
+	
+	@Override
+	public double ganaciaAnualDeTrigo() {
+		double totalDelMonto = 0;
+		for(Porcion porcion: listaDePorciones) {
+			totalDelMonto+= (porcion.ganaciaAnualDeTrigo()) /4 ; // lo dividimos por 4 porque son 4 sectores, me traigo el precio como si fuera puro y lo divido
 		}
 		
 		return totalDelMonto;
